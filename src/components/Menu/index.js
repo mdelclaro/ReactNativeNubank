@@ -49,12 +49,12 @@ export default function Menu({ translateY }) {
 
         <NavItem>
           <Icon name="credit-card" size={20} color="#fff" />
-          <NavText>Configurar Cartao</NavText>
+          <NavText>Configurar Cartão</NavText>
         </NavItem>
 
         <NavItem>
           <Icon name="smartphone" size={20} color="#fff" />
-          <NavText>Configuracoes do app</NavText>
+          <NavText>Configurações do app</NavText>
         </NavItem>
       </Nav>
 

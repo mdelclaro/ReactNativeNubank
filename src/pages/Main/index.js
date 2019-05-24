@@ -16,6 +16,11 @@ import {
   CardFooter,
   Title,
   Description,
+  DescriptionNormal,
+  DescriptionBold,
+  LimitDetails,
+  LimitText,
+  LimitValue,
   Annotation
 } from './styles';
 
@@ -90,15 +95,26 @@ export default function Main() {
             </CardHeader>
 
             <CardContent>
-              <Title>Saldo disponivel</Title>
-              <Description>R$ 197.332,12</Description>
+              <Title>FATURA ATUAL</Title>
+              <Description>
+                <DescriptionNormal>R$ </DescriptionNormal>
+                <DescriptionBold>197.332</DescriptionBold>
+                <DescriptionNormal>,12</DescriptionNormal>
+              </Description>
+
+              <LimitDetails>
+                <LimitText>Limite disponível </LimitText>
+                <LimitValue>R$ 80,27</LimitValue>
+              </LimitDetails>
             </CardContent>
 
             <CardFooter>
+              <Icon name="truck" size={28} color="#666" />
               <Annotation>
                 Compra mais recente em Indigo Estacionamentos no valor de R$
                 6,00 hoje
               </Annotation>
+              <Icon name="chevron-right" size={18} color="#666" />
             </CardFooter>
           </Card>
         </PanGestureHandler>

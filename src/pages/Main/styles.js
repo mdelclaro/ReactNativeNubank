@@ -36,29 +36,57 @@ export const CardHeader = styled.View`
 
 export const CardContent = styled.View`
   flex: 1;
-  padding: 0 30px;
+  padding: 0 30px 40px 30px;
   justify-content: center;
 `;
 
 export const Title = styled.Text`
-  font-size: 13px;
-  color: #999;
+  font-size: 14px;
+  font-weight: bold;
+  color: #00bcca;
 `;
 
-export const Description = styled.Text`
+export const Description = styled.Text``;
+
+export const DescriptionNormal = styled.Text`
   font-size: 32px;
   margin-top: 3px;
+  color: #00bcca;
+`;
+
+export const DescriptionBold = styled.Text`
+  font-size: 32px;
+  margin-top: 3px;
+  font-weight: bold;
+  color: #00bcca;
+`;
+
+export const LimitDetails = styled.View`
+  flex-direction: row;
+`;
+
+export const LimitText = styled.Text`
   color: #333;
 `;
 
+export const LimitValue = styled.Text`
+  font-weight: bold;
+  color: #9ed230;
+`;
+
 export const CardFooter = styled.View`
-  padding: 30px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 50px 30px 50px;
   background: #eee;
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
 `;
 
 export const Annotation = styled.Text`
+  padding-left: 10px;
+  padding-right: 20px;
   font-size: 12px;
   color: #333;
 `;
