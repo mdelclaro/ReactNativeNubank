@@ -1,14 +1,11 @@
 import styled from 'styled-components/native';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Animated } from 'react-native';
 
-export const Container = styled.ScrollView.attrs({
-  showsVerticalScrollIndicator: false
-})`
+export const Container = styled(Animated.View)`
   margin: 0 32px;
 `;
 
 export const Code = styled.View`
-  background: #fff;
   padding: 10px;
   overflow: hidden;
   align-self: center;

@@ -1,11 +1,12 @@
+import { Animated } from 'react-native';
 import styled from 'styled-components/native';
 import { getStatusBarHeight } from 'react-native-iphone-x-helper';
 
 export const Container = styled.View`
   flex: 1;
-  background: #8b10ae;
+  background: #82269e;
   padding-top: ${getStatusBarHeight()}px;
-  justify-content: center;
+  justify-content: flex-start;
 `;
 
 export const Content = styled.View`
@@ -14,12 +15,12 @@ export const Content = styled.View`
   z-index: 5;
 `;
 
-export const Card = styled.View`
+export const Card = styled(Animated.View)`
   flex: 1;
   background: #fff;
   border-radius: 4px;
-  margin: 0 20px;
-  height: 100%;
+  margin: 32px 20px 0px 20px;
+  height: 95%;
   position: absolute;
   left: 0;
   right: 0;

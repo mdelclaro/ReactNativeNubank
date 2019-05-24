@@ -12,15 +12,22 @@ import {
   SignOutButtonText
 } from './styles';
 
-export default function Menu() {
+export default function Menu({ translateY }) {
   return (
-    <Container>
+    <Container
+      style={{
+        opacity: translateY.interpolate({
+          inputRange: [0, 420],
+          outputRange: [0, 1]
+        })
+      }}
+    >
       <Code>
         <QRCode
           value="https://facebook.github.io/react-native/"
           size={100}
           fgColor="#fff"
-          bgColor="#8b10ae"
+          bgColor="#82269E"
         />
       </Code>
 
